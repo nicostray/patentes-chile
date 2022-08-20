@@ -1,0 +1,42 @@
+table{
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+    border:1px solid rgb(195, 195, 195);
+}
+
+.tablaPersona{
+    width: 600px;
+    max-width: 600px;
+}
+
+.tablaVehiculo{
+    width: 100%;
+}
+
+th{
+    padding:25px; 
+}
+
+td{
+   padding:15px;
+}
+
+
+thead{
+    background-color: var(--primaryColor);
+    font-size: 1.1rem;
+    color:white
+}
+
+
+tbody tr:nth-child(odd){
+    background-color:rgb(240, 240, 240)
+}
+
+@media(max-width: 1000px){
+    .tablaPersona{
+        max-width: 100%;
+        width: 100%;
+    }
+}

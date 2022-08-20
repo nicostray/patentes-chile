@@ -1,0 +1,11 @@
+.estadoBuscador{
+    position:absolute;
+    top:45px;
+    width: 100%;
+    padding:0 20px;
+    margin:auto;
+    text-shadow: 0 0 3px #000;
+    color:white;
+    font-weight: 700;
+    font-size: 1.1rem;
+}

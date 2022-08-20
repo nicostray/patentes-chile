@@ -1,0 +1,113 @@
+.hero__container-normal{
+    height: 100%;
+    max-height: 100vh;
+    width: 100vw;
+}
+
+.hero__container-mini{
+    max-height: 400px;
+    height: 100%;
+    width: 100vw;
+    padding-bottom:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: max-height 1s;
+}
+
+.hero{
+    height: 80%;
+    width: 100%;
+    padding:0 25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+    text-align: center;
+}
+
+.hero h1{
+    color:white;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-shadow: 0 0 3px #000;
+}
+
+.hero__buscadorContainer{
+    position:relative;
+    width: 100%;
+}
+
+.hero__buscador{
+    position:relative;
+    height: 40px;
+    max-width: 600px;
+    width: 80%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin:auto;
+}
+
+.hero__buscador input{
+    height: 100%;
+    width: calc(100% - 60px);
+    text-align: center;
+    font-size: 1.2rem;
+    border:none;
+    background-color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.hero__buscador input::placeholder{
+    font-size: 1rem;
+}
+
+input::-webkit-input-placeholder {
+    line-height:normal!important;
+}
+
+.hero__buscar{
+    height: 100%;
+    width: 60px;
+    cursor:pointer;
+    vertical-align: top;
+    background-color: var(--primaryColor);
+    color:white
+}
+
+.hero__buscar:hover > i {
+    transform: scale(1.1);
+}
+
+.hero__borrar{
+    position:absolute;
+    top:6px;
+    font-size: 1.5rem;
+    right:71px;
+    color:rgb(129, 129, 129);
+    cursor:pointer;
+}
+
+.hero__buscadorEstado{
+    text-shadow: 0 0 3px #000;
+    color:white;
+    font-weight: 700;
+}
+
+@media(max-width: 500px){
+    .hero{
+        gap:10px;
+    }
+
+    .hero h1{
+        font-size: 2rem;
+    }
+
+    .hero__buscador input::placeholder{
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+}
