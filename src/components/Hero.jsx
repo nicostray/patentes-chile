@@ -14,7 +14,7 @@ const Hero = ({setToggleResultado, toggleResultado, setDatosPatente, scrollDownP
     if(verificarPatente()){
     setRespuestaServer('buscando')
     const respuesta = await api(valorInput)
-    console.log(respuesta)
+
     if(respuesta.status === 200){
     setDatosPatente(respuesta.data)
     setToggleResultado(true)
