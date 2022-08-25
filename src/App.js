@@ -25,6 +25,7 @@ function App() {
     })
   }
 
+
   const scrollDownPage = (tamano) => {
     pagina.current.scrollBy({
       top: tamano,
