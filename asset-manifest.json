@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/patentes-chile/static/css/main.d45fa6cc.css",
-    "main.js": "/patentes-chile/static/js/main.39e2fc93.js",
+    "main.js": "/patentes-chile/static/js/main.4f0a32da.js",
     "static/media/hero.jpg": "/patentes-chile/static/media/hero.d1ecd4d4479e21619542.jpg",
     "index.html": "/patentes-chile/index.html",
     "main.d45fa6cc.css.map": "/patentes-chile/static/css/main.d45fa6cc.css.map",
-    "main.39e2fc93.js.map": "/patentes-chile/static/js/main.39e2fc93.js.map"
+    "main.4f0a32da.js.map": "/patentes-chile/static/js/main.4f0a32da.js.map"
   },
   "entrypoints": [
     "static/css/main.d45fa6cc.css",
-    "static/js/main.39e2fc93.js"
+    "static/js/main.4f0a32da.js"
   ]
 }
