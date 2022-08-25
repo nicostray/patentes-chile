@@ -62,7 +62,7 @@ const Hero = ({setToggleResultado, toggleResultado, setDatosPatente, scrollDownP
           <div className='hero__buscador'>
               <input ref={inputText} type='text' maxLength={6} placeholder='Patente' onKeyPress={handleKeyPress} onChange={(e) => setValorInput(e.target.value)}></input>
               <button className='hero__buscar' onClick={consultarPatente} aria-label='buscar'><i className="fa-solid fa-magnifying-glass"></i></button>
-              <button className='hero__borrar' onClick={eliminarTexto} aria-label='eliminar busqueda'><i className="fa-solid fa-xmark"></i></button>
+              {valorInput.length>0 && <button className='hero__borrar' onClick={eliminarTexto} aria-label='eliminar busqueda'><i className="fa-solid fa-xmark"></i></button>}
           </div>
           <EstadoBuscador estado={respuestaServer} />
         </div>
