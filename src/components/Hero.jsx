@@ -14,7 +14,7 @@ const Hero = ({setToggleResultado, toggleResultado, setDatosPatente, scrollDownP
     if(verificarPatente()){
     setRespuestaServer('buscando')
     const respuesta = await api(valorInput)
-
+      console.log(respuesta.status)
     if(respuesta.status === 200){
     setDatosPatente(respuesta.data)
     setToggleResultado(true)
@@ -27,6 +27,8 @@ const Hero = ({setToggleResultado, toggleResultado, setDatosPatente, scrollDownP
       setRespuestaServer('error')
     }else if(respuesta.response.status === 429){
       setRespuestaServer('limit')
+    }else if(!respuesta.status){
+      setRespuestaServer('server-error')
     }else{
       setRespuestaServer('error desconocido')
     }

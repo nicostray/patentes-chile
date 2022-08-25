@@ -5,10 +5,11 @@ const EstadoBuscador = ({estado}) => {
 
     const display = () => {
         switch (estado) {
-
             case 'hide':
                 return <p></p>
 
+            case 'server-error':
+                return <p>Necesita desplegar el servidor backend en local 💻 <br/> <a target="_blank" rel="noopener noreferrer" href="https://github.com/nicostray/patentes-backend">Repositorio</a></p>
             case 'bad-input':
                 return <p>Ingrese los datos correctamente ❌</p>
 
