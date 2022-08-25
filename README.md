@@ -19,7 +19,7 @@ en local para poder hacer uso de este proyecto.
 Iniciar
 
 ```bash
-  npm run start
+  $ npm run start
 ```
 
 Ante cualquier duda sobre el proyecto, no dudes en contactarme.
