@@ -1,0 +1,58 @@
+{
+    "vehiculo": [
+        {
+            "propiedad": "Patente",
+            "valor": "AAAA11"
+        },
+        {
+            "propiedad": "Tipo",
+            "valor": "EJEMPLO"
+        },
+        {
+            "propiedad": "Marca",
+            "valor": "EJEMPLO"
+        },
+        {
+            "propiedad": "Modelo",
+            "valor": "EJEMPLO"
+        },
+        {
+            "propiedad": "Año",
+            "valor": "2022"
+        },
+        {
+            "propiedad": "Color",
+            "valor": "EJEMPLO"
+        },
+        {
+            "propiedad": "N° Motor",
+            "valor": "EJEMPLO"
+        },
+        {
+            "propiedad": "N° Chasis",
+            "valor": "EJEMPLO"
+        },
+        {
+            "propiedad": "Multas",
+            "valor": "EJEMPLO"
+        }
+    ],
+    "propietario": [
+        {
+            "propiedad": "Nombre",
+            "valor": "EJEMPLO EJEMPLO EJEMPLO EJEMPLO"
+        },
+        {
+            "propiedad": "Rut",
+            "valor": "EJEMPLO"
+        },
+        {
+            "propiedad": "Dirección",
+            "valor": "EJEMPLO EJEMPLO"
+        },
+        {
+            "propiedad": "Ciudad",
+            "valor": "Curico"
+        }
+    ]
+}
