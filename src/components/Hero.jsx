@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import api from '../Api/api';
 import '../styles/hero.css'
 import EstadoBuscador from './EstadoBuscador';
+import datosEjemplo from '../Api/datosEjemplo.json'
 
 const Hero = ({setToggleResultado, toggleResultado, setDatosPatente, scrollDownPage}) => {
 
@@ -16,12 +17,12 @@ const Hero = ({setToggleResultado, toggleResultado, setDatosPatente, scrollDownP
     const respuesta = await api(valorInput)
       console.log(respuesta.status)
     if(respuesta.status === 200){
-    setDatosPatente(respuesta.data)
-    setToggleResultado(true)
-    setRespuestaServer('encontrado')
-    setTimeout(() => {
-      scrollDownPage(heroContainer.current.clientHeight)
-    }, 1000)
+      setDatosPatente(respuesta.data)
+      setToggleResultado(true)
+      setRespuestaServer('encontrado')
+      setTimeout(() => {
+        scrollDownPage(heroContainer.current.clientHeight)
+      }, 1000)
 
     }else if(respuesta.response.status === 400){
       setRespuestaServer('error')
@@ -29,6 +30,12 @@ const Hero = ({setToggleResultado, toggleResultado, setDatosPatente, scrollDownP
       setRespuestaServer('limit')
     }else if(!respuesta.status){
       setRespuestaServer('server-error')
+      setDatosPatente(datosEjemplo)
+      setToggleResultado(true)
+      setTimeout(() => {
+        scrollDownPage(heroContainer.current.clientHeight)
+      }, 1000)
+      alert("Los datos mostrados solo son un ejemplo.")
     }else{
       setRespuestaServer('error desconocido')
     }
